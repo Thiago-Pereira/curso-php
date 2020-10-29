@@ -1,0 +1,161 @@
+O uso da tag em HTML é importante para os o uso de dados, e como os navegadores e sites de busca vão pegar informação embora visualmente não mude tanto
+
+border-box : tudo que está dentro inclusive a borda e padding (quando colocar algo para não grudar no cabeçalho e nem rodapé)
+
+grid: definir linhas e colunas e colocar o elemento dentro deles 
+
+grid-template-areas cabecalho não é a classe e sim o nome usado no CSS 
+
+position: sticky; bottom: 0px; manter o tamanho do rodapé parado caso o tamanho do conteúdo aumente ( sempre visivel)
+
+height: calc(100vh - 180px); garante que a altura é sempre esse o que tira a necessidade do item acima
+
+display: flex; existe propriedade flex-direction que coloca todos os elementos na mesma linha
+
+flex-direction: column; muda direção dos elementos / A partir dessa propriedade que define o eixo principal e secundário
+
+justify-content: flex-end; alinha o eixo principal
+
+align-items: ; alinhar cross access vulgo eixo secundário
+
+Tag h1 vem com margem por padrão
+
+z-index: 1; colocar assima dos outros elementos para o box shadow apareceer
+
+overflow-y: scroll; coloca a barrinha apenas nessa parte e não na página inteira
+
+display flex numa nav que contem divs signfica que a div é flex item e nav é tag content
+
+flex-basis: 32%; largura do elemento
+
+?php
+                include("teste/teste.php")
+?>
+
+modo convencional, porem fica facil ataques
+
+
+. no PHP concatena uma string em outra
+
+PHP termina com ;
+
+<?= ?> não precisa chamar o echo pra imprimir no navegador, somente uma string
+
+sempre que usar HTML tente usar o trecho de HTML, e escrever PHP dentro do PHP
+
+sempre codigo mais simples
+
+desconsidera comentário no fechamento do PHP
+
+var_dump: te dá informações sobre o tipo de variável
+
+echo sempre apresenta valores na base decimal
+
+e3 multiplica 10 a 3 ou seja 1000
+
+e-3 divide 10 a 3
+
+erro de divisão por 0 pelo intdiv, não redenriza nada depois
+
+** exponencial
+
+substr o segundo paramêtro subtraí um do vetor de string ou seja se manda 6 ele pega 5 e se não colocar o segundo paramêtro ele vai até o final
+
+colocar entre () e o tipo, converte para esse tipo
+
+você não diz o tipo da variável quando cria uma (não tem tipagem forte)
+
+$valor = $variavelInexistente ?? 'valor default'; caso não receba um valor que esperava usa um default
+
+'' não resolve valor de variável
+"" resolve 
+
+Interpolação = interpretar o valor de uma variável dentro de um contexto
+
+lembrete, linha abaixo do if e identada se for apenas uma não precisa de chaves pois ele escreve ela se a condição for verdadeira
+
+=== leva o tipo em consideração também
+
+spaceship se o número primeiro é maior que o segundo ele retorna o valor 1, se forem iguais retorna 0 e se o segundo for maior que o primeiro retorna -1
+
+XOR = exemplo carro tenho dois modelos e só posso comprar 1 senão não existe possibilidade
+
+Operações com array, se tiver uma mesma chave com nomes iguais prevalece o mais a esquerda na operação de +
+
+função sort coloca na ordem no mesmo array
+
+Array constante o valor dentro dele não muda também e nem adiciona.
+
+# é uma âncora para você ficar em uma página
+
+continue é para você pular para a próxima repetição
+
+Os ... dentro da função faz espalhar os números em array, isso pode ser feito no paramêtro da função como na chamada da função caso passe um array
+
+MAP transforma um array em outro array e cada elemento transformado por uma função que tem a logica para gerar o novo array
+
+Filter  retorna apenas V ou F e é composto apenas pela quantidade V, exemplo array 4 e tem 2 V, gera array 2
+
+POO
+
+Classe: é um escopo onde você pode ter atributos e/ou comportamentos, é a estrutura que define seus objetos personalizados. 
+
+Classe define um tipo!
+
+Classe é uma abstração ou seja uma simplificação
+
+Objeto: é o que referencia a classe, exemplo há a classe int e os objetos são os números inteiros cada um diferente do outro
+
+Objeto == Instância
+
+Construtor é um método(função) especial que cria um novo objeto, em PHP há apenas um único construtor
+
+Destrutor é quando um objeto vai ser destruído
+
+Membros de uma classe: variáveis/constantes, construtor, métodos e Destrutor
+
+Static que define se um atributo pertence a uma classe ou a um objeto, quando pertence a classe signfica que o atributo terá um único valor para todas as instâncias caso seja uma variável, e se mudar o valor da variável todas as instâncias verão o novo valor 
+
+this aponta para a instância atual
+
+Em O.O. o ator principal é o objeto
+
+O dado é o principal e agora tem os métodos
+
+Pilares da O.O. :
+
+Encapsulamento: você não precisa entender como funciona, apenas chamar os métodos públicos, atributos privados só funciona lá dentro do objeto e não tem acesso de fora. Só interaja com as partes públicas.
+
+Protected: é visivel pela classe e transmitido por herança
+
+Reuso: composição uma classe tem um objeto de outra classe, herança funciona como um é um, classes pai e classe filho
+
+Super Classe (+genérica) e Sub Classe (+específica)
+
+Polimorfismo: 2 formas: estática (é a sobrecarga de métodos ex: 2 métodos com o mesmo nome, não existe em PHP) e dinâmico (tem que ter herança, consegue associar a classe filha ao tipo da classe pai, ex: Carro c = new Civic()  e nisso você consegue apontar essa variável trocar a associação a outro classe filho )
+
+Por exemplo, function estacionar(Carro $c) -> $c pode ter várias formas, como celta, civic, gol 
+
+Abstração: quando mapeia um problema para um software você faz um abstração, escolher nomes bons
+
+this só disponivel em uma função não estatica
+
+Interface os métodos criados devem ser implementados nas classes que usam a interface, vantagem uma classe herda várias
+
+Classe Abstrata: pode ter todos os métodos implementados ou não ter corpo. E não pode ser instanciada.
+
+trim($variável) tira o espaço em branco 
+
+Métodos Mágicos basicamente chama os atributos/métodos que não existem na classe
+
+Include na função, os métodos do outro arquivo só serão chamados dentro da função, mas a função é possível de se chamar
+
+Require vs Include: se não tiver o arquivo para adicionar no require dá erro fatal e no include dá aviso
+
+Quando chama o include de novo a variável é reinicializada
+
+No include once ou require once ele não inicializa 
+
+Throwable qualquer erro ou exeção cai aqui 
+
+form-row: classe do bootstrap uma linha que pode ter vários campos
